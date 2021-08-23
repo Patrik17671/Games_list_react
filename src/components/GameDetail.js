@@ -75,7 +75,7 @@ const GameDetail = () => {
                     </StyledInfo>
                 </StyledStats>
                 <StyledMedia>
-                    <img src={smallImage(game.background_image,1280)} alt="image" />
+                    <img src={smallImage(game.background_image,1280)} alt="foto" />
                 </StyledMedia>
                 <StyledDescription>
                     <p>{game.description_raw}</p>
