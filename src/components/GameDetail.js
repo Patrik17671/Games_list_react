@@ -67,7 +67,7 @@ const GameDetail = () => {
                                 <img
                                     key={data.platform.id}
                                     src={getPlatform(data.platform.name)}
-                                    alt={data.platform.name}
+                                    alt="foto"
                                     height="42px"
                                 />
                             ))}
