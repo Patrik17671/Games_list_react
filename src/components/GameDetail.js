@@ -5,7 +5,6 @@ import {motion} from "framer-motion";
 
 import {useSelector} from "react-redux";
 import {useHistory} from "react-router-dom";
-import {smallImage} from "../util";
 //images
 import playstation from "../img/playstation.svg";
 import steam from "../img/steam.svg";
@@ -75,14 +74,14 @@ const GameDetail = () => {
                     </StyledInfo>
                 </StyledStats>
                 <StyledMedia>
-                    <img src={smallImage(game.background_image,1280)} alt="foto" />
+                    <img src={game.background_image} alt="foto" />
                 </StyledMedia>
                 <StyledDescription>
                     <p>{game.description_raw}</p>
                 </StyledDescription>
                 <div className="gallery">
                     {screen.results.map(screen => (
-                        <img src={smallImage(screen.image,1280)} key={screen.id} alt="" />
+                        <img src={screen.image} key={screen.id} alt="" />
                     ))}
                 </div>
             </StyledDetail>
